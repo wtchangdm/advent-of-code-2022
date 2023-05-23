@@ -1,19 +1,19 @@
 #[derive(Debug)]
 struct Pair {
-    x: (i32, i32),
-    y: (i32, i32),
+    x: (u8, u8),
+    y: (u8, u8),
 }
 
 impl Pair {
     fn from(pair_text: &str) -> Self {
         let strs: Vec<_> = pair_text.split(',').collect();
-        let x: Vec<i32> = strs[0]
+        let x: Vec<u8> = strs[0]
             .split('-')
-            .map(|c| c.parse::<i32>().unwrap())
+            .map(|c| c.parse::<u8>().unwrap())
             .collect();
-        let y: Vec<i32> = strs[1]
+        let y: Vec<u8> = strs[1]
             .split('-')
-            .map(|c| c.parse::<i32>().unwrap())
+            .map(|c| c.parse::<u8>().unwrap())
             .collect();
 
         Self {
