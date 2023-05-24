@@ -21,8 +21,6 @@ fn get_distinct_consecutive_messages(input: &str, distinct_num: usize) -> usize 
         }
     }
 
-    println!("answer: {}", &input[answer - distinct_num..=answer]);
-
     answer
 }
 
