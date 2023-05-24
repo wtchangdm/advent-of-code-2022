@@ -136,7 +136,7 @@ mod tests {
 
         let answer = solve_part1(&lines);
         println!("Answer of day 2-1: {}", answer);
-        assert_eq!(solve_part1(&lines), 13_484);
+        assert_eq!(answer, 13_484);
     }
 
     #[test]
@@ -159,6 +159,6 @@ mod tests {
 
         let answer = solve_part2(&lines);
         println!("Answer of day 2-2: {}", answer);
-        assert_eq!(solve_part2(&lines), 13_433);
+        assert_eq!(answer, 13_433);
     }
 }
